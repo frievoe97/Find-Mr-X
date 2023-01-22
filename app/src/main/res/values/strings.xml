@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Find Mr. X</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZnJpZXZvZSIsImEiOiJjanluY2ZyZmUwcWFvM2RxZGU3Mm1zN3c0In0.OACA4qGdAb-7Dz2V0o1_hw</string>
+</resources>

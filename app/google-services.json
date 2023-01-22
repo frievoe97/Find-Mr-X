@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "108969212588",
+    "firebase_url": "https://find-mr-x-default-rtdb.firebaseio.com",
+    "project_id": "find-mr-x",
+    "storage_bucket": "find-mr-x.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108969212588:android:b6c4bbcd77827418a5bd09",
+        "android_client_info": {
+          "package_name": "com.friedrichvoelkers.mobbs_layout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108969212588-321eie1shnnp4hj0839hre9vnjvviseh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOBp9-I_UmveHqo5AHLFPU3gb7-pXsRLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108969212588-321eie1shnnp4hj0839hre9vnjvviseh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumberPickerTextColorStyle">
+        <item name="android:textColorPrimary">@color/color5</item>
+        <item name="colorControlNormal">@color/color5</item>
+    </style>
+
+    <style name="Text1">
+        <item name="android:textColor">@color/color5</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text2">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/color5</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">50dp</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="Button1">
+        <item name="android:backgroundTint">@color/color3</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="ImageButton1">
+        <item name="android:backgroundTint">@color/color3</item>
+        <item name="android:background">@drawable/image_button_rounded</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="ImageButton2">
+        <item name="android:backgroundTint">@color/color3</item>
+        <item name="android:background">@drawable/image_button_rounded</item>
+    </style>
+
+    <style name="SlideToActView">
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="text_size">20sp</item>
+        <item name="text_style">bold</item>
+    </style>
+
+
+
+</resources>

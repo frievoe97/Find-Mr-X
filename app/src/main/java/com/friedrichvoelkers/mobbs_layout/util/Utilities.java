@@ -7,12 +7,6 @@ import java.util.List;
 
 final public class Utilities {
 
-    /**
-     * 
-     * @param time
-     * @param useDots
-     * @return
-     */
     public static String convertTimeInMillisecondsToCountdownString (long time, boolean useDots) {
         String minutes = String.valueOf((time / 1000) / 60);
         String seconds = String.valueOf((time / 1000) % 60);
@@ -36,7 +30,8 @@ final public class Utilities {
 
     }
 
-    public static ArrayList<String> createNewArrayListFromInteger (int start, int end, int interval) {
+    public static ArrayList<String> createNewArrayListFromInteger (int start, int end,
+                                                                   int interval) {
         ArrayList<String> returnArrayList = new ArrayList<>();
         for (int i = start; i <= end; i = i + interval) {
             returnArrayList.add(String.valueOf(i));

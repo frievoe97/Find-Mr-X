@@ -109,7 +109,7 @@ public class FireBaseController {
                     public void onChildChanged (@NonNull DataSnapshot snapshot,
                                                 @Nullable String previousChildName) {
                         try {
-                            GameDataController.updateUserLocation(snapshot.getValue(User.class));
+                            GameDataController.updateSingleUserLocation(snapshot.getValue(User.class));
                         } catch (GameDataException ignored) {
 
                         }

@@ -2,6 +2,7 @@ package com.friedrichvoelkers.mobbs_layout.view;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.ViewMatchers.isClickable;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
@@ -39,20 +40,20 @@ public class SettingsScreenTest {
 
     @Test
     public void checkIfGameDurationTextIsDisplayed () {
-
         onView(withId(R.id.text_setting_view_game_duration)).check(matches(isDisplayed()));
-
+        onView(withId(R.id.text_setting_view_game_duration)).check(matches(isClickable()));
     }
 
     @Test
     public void checkIfMrXIntervalTextIsDisplayed () {
         onView(withId(R.id.text_setting_view_mr_x_interval)).check(matches(isDisplayed()));
+        onView(withId(R.id.text_setting_view_mr_x_interval)).check(matches(isClickable()));
     }
 
     @Test
     public void checkIfMrXTextIsDisplayed () {
         onView(withId(R.id.text_setting_mr_x)).check(matches(isDisplayed()));
-
+        onView(withId(R.id.text_setting_mr_x)).check(matches(isClickable()));
     }
 
     @Test
@@ -63,6 +64,7 @@ public class SettingsScreenTest {
     @Test
     public void checkIfStartButtonIsDisplayed () {
         onView(withId(R.id.button_start_setting_view)).check(matches(isDisplayed()));
+        onView(withId(R.id.button_start_setting_view)).check(matches(isClickable()));
     }
 
 }

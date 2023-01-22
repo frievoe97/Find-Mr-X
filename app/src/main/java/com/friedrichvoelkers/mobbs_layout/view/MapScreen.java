@@ -302,7 +302,7 @@ public class MapScreen extends AppCompatActivity implements Observer {
     }
 
     private void updateUserLocations (boolean updateMrX) throws GameDataException {
-        GameDataController.updateUserLocation(allUserSymbols, symbolManager, updateMrX);
+        GameDataController.updateSingleUserLocation(allUserSymbols, symbolManager, updateMrX);
     }
 
     @Override

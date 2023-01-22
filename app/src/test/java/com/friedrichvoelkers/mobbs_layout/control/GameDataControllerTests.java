@@ -31,7 +31,7 @@ public class GameDataControllerTests {
     }
 
     @Test
-    public void createNewGameTest3() {
+    public void createNewGameTest3 () {
         Assert.assertNull(GlobalState.getInstance().getGameData());
     }
 
@@ -169,7 +169,7 @@ public class GameDataControllerTests {
         User correctUser = new User(true, 10000, "friedrich", "Friedrich");
         correctUser.setLatitude(100);
         correctUser.setLongitude(200);
-        GameDataController.updateUserLocation(correctUser);
+        GameDataController.updateSingleUserLocation(correctUser);
     }
 
     @Test (expected = GameDataException.class)
@@ -178,7 +178,7 @@ public class GameDataControllerTests {
         User incorrectUser = new User(true, 10004, "thomas", "Tommi");
         incorrectUser.setLatitude(100);
         incorrectUser.setLongitude(200);
-        GameDataController.updateUserLocation(incorrectUser);
+        GameDataController.updateSingleUserLocation(incorrectUser);
     }
 
     @Test
@@ -196,43 +196,41 @@ public class GameDataControllerTests {
     }
 
     @Test
-    public void didIFoundMrXTest1() {
+    public void didIFoundMrXTest1 () {
         this.setUser();
         Assert.assertTrue(GameDataController.didIFoundMrX("samsung-a3"));
     }
 
     @Test
-    public void didIFoundMrXTest2() {
+    public void didIFoundMrXTest2 () {
         this.setUser();
         Assert.assertFalse(GameDataController.didIFoundMrX("galaxy4a"));
     }
 
     @Test
-    public void didIFoundMrXTest3() {
+    public void didIFoundMrXTest3 () {
         this.setUser();
         Assert.assertFalse(GameDataController.didIFoundMrX("iphone12"));
     }
 
     @Test
-    public void didIFoundMrXTest4() {
+    public void didIFoundMrXTest4 () {
         this.setUser();
         Assert.assertFalse(GameDataController.didIFoundMrX("nokia1234"));
     }
 
     @Test
-    public void amIMrXTest1() {
+    public void amIMrXTest1 () {
         this.setUser();
         Assert.assertFalse(GameDataController.amIMrX());
     }
 
     @Test
-    public void amIMrXTest2() {
+    public void amIMrXTest2 () {
         this.setUser();
         Assert.assertFalse(GameDataController.amIMrX());
         GlobalState.getInstance().getGameData().setMrX("Friedrich");
         Assert.assertTrue(GameDataController.amIMrX());
     }
-
-
 
 }
